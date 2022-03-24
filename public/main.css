@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400|Inconsolata:400');
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+:root {
+  /* COLORS  */
+
+  /* main color */
+
+  --main-color: #FF638F;
+
+  /* primary */
+  --primary-0: #f0efff;
+  --primary-50: #d8d6ff;
+  --primary-100: #c1beff;
+  --primary-200: #aaa5ff;
+  --primary-300: #938dff;
+  --primary-400: #7b74ff;
+  /* main */
+  --primary-500: #645cff;
+  --primary-600: #554ed9;
+  --primary-700: #4640b3;
+  --primary-800: #37338c;
+  --primary-900: #282566;
+  --primary-1000: #191740;
+  --primary-1100: #0a0919;
+  /* grey */
+  --grey-0: #fafbfc;
+  --grey-50: #f2f4f8;
+  --grey-100: #eaedf3;
+  --grey-200: #e2e7ef;
+  --grey-300: #dbe0ea;
+  --grey-400: #d3dae6;
+  --grey-500: #cbd3e1;
+  --grey-600: #adb3bf;
+  --grey-700: #8e949e;
+  --grey-800: #70747c;
+  --grey-900: #51545a;
+  --grey-1000: #333538;
+  --grey-1100: #141516;
+
+  /* rest */
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* typography */
+  --headingFont: 'Inconsolata', monospace;
+  --bodyFont: 'Montserrat', sans-serif;
+  --smallText: 0.7em;
+  /* rest */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-1000);
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+  /* box shadows */
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+html {
+  font-size: 112.5%;
+}
+
+body {
+  color: var(--textColor);
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  margin-bottom: 1.38rem;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+}
+
+h1 {
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text-small {
+  font-size: var(--smallText);
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px;
+    align-items: stretch;
+    justify-content: baseline;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    padding: 0px 20px;
+}
+
+.info-title h2 span:nth-of-type(1){
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.info-btns a{
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 4px;
+    box-shadow: var(--shadow-1);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 948px){
+    .banner{
+        display: flex;
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url('./images/hero-image.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: var(--white);
+        padding: 20px 5px;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .info-btns{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: stretch;
+        align-items: stretch;
+    }
+
+    span{
+        color: var(--white);
+    }
+
+    .hero-image{
+        display: none;
+    }
+}
+
+
+/* Sign up */
+
+img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.sign-up-main{
+    width: 100%;
+    min-height: 100vh;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-content-wrapper{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-data-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 40px;
+    border-radius: 5px;
+    box-shadow: var(--shadow-3);
+}
+
+.sign-up-title h4{
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.sign-up-details-container div input{
+    width: 300px;
+    padding: 10px 10px;
+    margin: 10px 0px;
+    outline: none;
+    border: none;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: var(-shadow-4);
+}
+
+.sign-up-image{
+    height: 100%;
+    padding: 30px;
+}
+
+.sign-up-info{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.sign-up-info #sign-up{
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 3px 20px;
+    border-radius: var(--borderRadius);
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 948px){
+    .sign-up-image{
+        display: none;
+    }
+
+    .sign-up-data-container{
+        background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('./images/sign-up.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .sign-up-content-wrapper{
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sign-up-data-container{
+        width: 100%;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sign-up-details-container div input{
+        width: 95%;
+    }
+
+    .sign-up-title h4{
+        font-size: 2.5rem;
+        color: var(--main-color);
+    }
+
+    .sign-up-info p{
+        color: #fff;
+    }
+
+    .sign-up-info p a{
+        color: var(--main-color);
+    }
+
+    .sign-up-info #sign-up{
+        width: 95%;
+    }
+    
+}
