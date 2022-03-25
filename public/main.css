@@ -212,135 +212,7 @@ img{
     }
 }
 
-
-/* Sign up */
-
-/* img{
-    max-width: 100%;
-    height: 100%;
-}
-
-.sign-up-main{
-    width: 100%;
-    min-height: 100vh;
-    max-height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sign-up-content-wrapper{
-    width: 80%;
-    height: 80vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.sign-up-data-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 10px 40px;
-    border-radius: 5px;
-    box-shadow: var(--shadow-3);
-}
-
-.sign-up-title h4{
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.sign-up-details-container div input{
-    width: 300px;
-    padding: 10px 10px;
-    margin: 10px 0px;
-    outline: none;
-    border: none;
-    border: 1px solid #333;
-    border-radius: 5px;
-    box-shadow: var(-shadow-4);
-}
-
-.sign-up-image{
-    height: 100%;
-    padding: 30px;
-}
-
-.sign-up-info{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-}
-
-.sign-up-info #sign-up{
-    background-color: var(--main-color);
-    color: var(--white);
-    padding: 3px 20px;
-    border-radius: var(--borderRadius);
-    text-align: center;
-    width: 100%;
-}
-
-@media screen and (max-width: 948px){
-    .sign-up-image{
-        display: none;
-    }
-
-    .sign-up-data-container{
-        background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('./images/sign-up.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .sign-up-content-wrapper{
-        width: 100%;
-        min-height: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .sign-up-data-container{
-        width: 100%;
-        min-height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .sign-up-details-container div input{
-        width: 95%;
-        margin: 15px 0px;
-    }
-
-    .sign-up-title h4{
-        font-size: 2.5rem;
-        color: var(--main-color);
-    }
-
-    .sign-up-info p{
-        color: #fff;
-    }
-
-    .sign-up-info p a{
-        color: var(--main-color);
-    }
-
-    .sign-up-info #sign-up{
-        width: 95%;
-    }
-    
-} */
-
+/* sign up */
 .signup-main-container{
     width: 100%;
     min-height: 100vh;
@@ -584,4 +456,42 @@ img{
     .login-info p a{
         color: var(--main-color);
     }
+}
+
+/* notify div */
+
+#notify-div, #login-notify-div{
+    width: 90%;
+    margin: 0 auto;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--shadow-3);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    display: none;
+}
+
+.notify-div p, .login-notify-div p {
+    text-align: center;
+}
+
+.success-div{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--shadow-3);
+    background-color: var(--green-light);
+    color: var(--green-dark);
+    transition: all 0.3s ease-in-out;
+}
+
+.error-div{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--shadow-3);
+    background-color: var(--red-light);
+    color: var(--red-dark);
+    transition: all 0.3s ease-in-out;
 }
